@@ -1,21 +1,28 @@
-import React from 'react';
-import './App.css';
-import Header from '../Header/Header';
-import firebaseConfig from '../../config';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import Header from "../Header/Header";
+import firebaseConfig from "../../config";
 
 function App() {
   return (
     <div className="App">
-     {/* HEADER */}
-     <Header />
+      <Router>
+        {/* HEADER */}
+        <Header />
 
-     {/* TINDER CARD */}
+        {/* TINDER CARD */}
 
-     {/* BUTTONS GROUP */}
+        {/* BUTTONS GROUP */}
 
-     {/* CHAT SCREEN */}
-     {/* SINGLE CHAT */}
-
+        {/* CHAT SCREEN */}
+        {/* SINGLE CHAT */}
+        <Switch>
+          <Route path="/chat">{/* <Chat /> */}</Route>
+          <Route path="/profile">{/* <Profile /> */}</Route>
+          <Route path="/">{/* <Home /> */}</Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
