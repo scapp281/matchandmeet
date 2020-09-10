@@ -2,7 +2,7 @@ import React from 'react';
 import TextsmsRoundedIcon from '@material-ui/icons/TextsmsRounded';
 import IconButton from '@material-ui/core/IconButton';
 
-function Chat () {
+function ChatLogo () {
     return (
         <div>
             <IconButton>
@@ -12,4 +12,4 @@ function Chat () {
     )
 }
 
-export default Chat;
+export default ChatLogo;

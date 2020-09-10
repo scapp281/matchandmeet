@@ -2,7 +2,7 @@ import React from 'react';
 import FaceIcon from '@material-ui/icons/Face';
 import IconButton from '@material-ui/core/IconButton';
 
-function Profile() {
+function ProfileIcon() {
     return (
         <div>
             <IconButton>
@@ -12,4 +12,4 @@ function Profile() {
     )
 }
 
-export default Profile;
+export default ProfileIcon;

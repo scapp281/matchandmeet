@@ -1,16 +1,16 @@
 import React from 'react';
 import './Header.css';
-import Chat from './Chat/Chat';
+import ChatLogo from './ChatLogo/ChatLogo';
 import Logo from './Logo/Logo';
-import Profile from './Profile/Profile';
+import ProfileIcon from './ProfileIcon/ProfileIcon';
 
 
 function Header() {
     return (
         <div className="header">
-            <Chat />
+            <ChatLogo />
             <Logo />
-            <Profile />   
+            <ProfileIcon />   
         </div>
     )
 }
