@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TinderCard from 'react-tinder-card';
+import './TinderCards.css';
 
 function TinderCards() {
     const [people, setPeople] = useState([
@@ -9,7 +10,11 @@ function TinderCards() {
         },
         {
             name: 'Roman Denisenko',
-            url: 'https://images.unsplash.com/photo-1598904335641-d104b1856d15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQ3MzMyfQ&auto=format&fit=crop&w=800&q=60'
+            url: 'https://images.unsplash.com/photo-1562572159-4efc207f5aff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+        },
+        {
+            name: 'Mihah Aloexo',
+            url: 'https://images.unsplash.com/photo-1511242962912-ba18dcf39f30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60'
         }
     ]);
 
@@ -17,20 +22,20 @@ function TinderCards() {
     return (
         <div>
             <h1>Tinder Cards</h1>
-            {people.map((person) => (
-                <TinderCard className="swipe"
-                            key={person.name}
-                            preventSwipe={["up", "down"]}
-                >
-                    <div className="card"
-                         style={{ backgroundImage: `url(${person.url})`, width: "300px", height: "400px", backgroundSize: "cover",
-                                  backgroundRepeat: "no-repeat"  
-                        }}
+            <div class="tinderCards_cardContainer">
+                {people.map((person) => (
+                    <TinderCard className="swipe"
+                                key={person.name}
+                                preventSwipe={["up", "down"]}
                     >
-                        <h3>{ person.name }</h3>
-                    </div>
-                </TinderCard>
-            ))}
+                        <div className="card"
+                            style={{ backgroundImage: `url(${person.url})`}}
+                        >
+                            <h3>{ person.name }</h3>
+                        </div>
+                    </TinderCard>
+                ))}
+            </div>
         </div>
     )
 }
