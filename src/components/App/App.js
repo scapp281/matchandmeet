@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Header from "../Header/Header";
 import TinderCards from "../TinderCards/TinderCards";
-import firebaseConfig from "../../config";
 
 function App() {
   return (
