@@ -19,7 +19,7 @@ function App() {
         {/* CHAT SCREEN */}
         {/* SINGLE CHAT */}
         <Switch>
-          <Route path="/chat">{/* <Chat /> */}</Route>
+          <Route path="/chats"><h1>chat game</h1></Route>
           <Route path="/profile">{/* <Profile /> */}</Route>
           <Route path="/">
             <TinderCards />
