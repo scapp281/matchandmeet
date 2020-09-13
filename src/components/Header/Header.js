@@ -4,14 +4,20 @@ import ChatIcon from './ChatIcon/ChatIcon';
 import Logo from './Logo/Logo';
 import ProfileIcon from './ProfileIcon/ProfileIcon';
 import { Link } from 'react-router-dom';
+import BackButton from './BackButton/BackButton';
 
 
-function Header() {
+function Header( {backButton}) {
     return (
         <div className="header">
-            <Link to="/chats">
-                <ChatIcon />
-            </Link>
+            {backButton ? (
+                <BackButton backButton={backButton}/>
+              ) : (
+                <Link to="/chats">
+                  <ChatIcon />
+                  </Link>
+                
+              )}
             <Link to="/">
                 <Logo />
             </Link>

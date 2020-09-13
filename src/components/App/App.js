@@ -9,19 +9,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* HEADER */}
-        <Header />
-
-        {/* TINDER CARD */}
-
-        {/* BUTTONS GROUP */}
-
-        {/* CHAT SCREEN */}
-        {/* SINGLE CHAT */}
         <Switch>
-          <Route path="/chats"><h1>chat game</h1></Route>
+          <Route path="/chats">
+            <Header backButton="/" />  
+            <h1>chat game</h1>
+          </Route>
           <Route path="/profile">{/* <Profile /> */}</Route>
           <Route path="/">
+            <Header />
             <TinderCards />
             <SwipeButtons />
           </Route>
