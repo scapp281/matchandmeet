@@ -1,0 +1,46 @@
+.avatar {
+    background-image: url('../../img/people.png');
+    width: 50px;
+    height: 50px;
+    border: 1px dashed dodgerblue;
+    border-radius: 50%; 
+}
+
+.avatarA {
+    background-position: 7px -6px;
+}
+
+.avatarB {
+    background-position: -47px -3px
+}
+
+.avatarC {
+    background-position: -106px -9px
+}
+
+.avatarD {
+    background-position: -166px -14px
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 70px;
+    border-bottom: 1px solid #fafafa;
+}
+
+.chat__image{
+    margin-right: 20px;
+}
+.chat__details {
+    flex: 1;
+}
+.chat__details > p {
+    color: olive;
+}
+
+.chat__timestamp {
+    color: lightgray;
+}
