@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "../Header/Header";
 import TinderCards from "../TinderCards/TinderCards";
 import SwipeButtons from "../SwipeButtons/SwipeButtons";
+import Chats from "../Chats/Chats";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Switch>
           <Route path="/chats">
             <Header backButton="/" />  
-            <h1>chat game</h1>
+            <Chats />
           </Route>
           <Route path="/profile">{/* <Profile /> */}</Route>
           <Route path="/">

@@ -1,7 +1,5 @@
- import React from "react";
+import React from "react";
 import './Chats.css';
-import Avatar from "@material-ui/core/Avatar";
-import { Link } from "react-router-dom";
 import Chat from "./Chat";
 
 
