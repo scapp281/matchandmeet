@@ -7,7 +7,7 @@ function Chats() {
     return (  
         <div className="chats">
             <Chat 
-                name = "Jesscia"
+                name = "Jessica"
                 message = "Hi there!"
                 timestamp = "3 minutes ago"
                 // profilePic="avatarA"

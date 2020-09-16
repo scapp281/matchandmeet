@@ -25,7 +25,7 @@ function Chat({name , message, profilePic, timestamp }) {
     const classes = useStyles();
 
     return (
-        <Link to={`/chat/${name}`}>
+      <Link to={`/chat/${name}`}>
           <div className="chat">
             {/**  <div className={`avatar ${props.profilePic}`}></div> */}
             <Avatar className={`chat__image ${classes.large}`} alt={name} src={profilePic} />
@@ -35,7 +35,7 @@ function Chat({name , message, profilePic, timestamp }) {
             </div>
             <p className="chat__timestamp">{timestamp}</p>
           </div>
-        </Link>
+      </Link>
     )
 }
  

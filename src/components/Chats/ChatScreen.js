@@ -7,19 +7,16 @@ const ChatScreen = () => {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
     {
-      name: "Ellen",
+      name: "Jessica",
       image:
-        "https://profile-images.xing.com/images/8a5c3a56f55741fabf8911d38469b737-5/nicole-distler.1024x1024.jpg",
+      "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       message: "Whats up 💌",
     },
     {
-      name: "Ellen",
-      image:
-        "https://profile-images.xing.com/images/8a5c3a56f55741fabf8911d38469b737-5/nicole-distler.1024x1024.jpg",
       message: "Hows it going!",
     },
     {
-      message: "Hi! How are you Nicole!",
+      message: "Hi! How are you Jessica!",
     },
   ]);
 
@@ -34,35 +31,35 @@ const ChatScreen = () => {
 
   return (
     <div className="chatScreen">
-      <p className="chatScreen_timestamp">YOU MATCHED WITH ELLEN ON 10/08/20</p>
+      <p className="chatScreen__timestamp">YOU MATCHED WITH JESSICA ON 1/08/21</p>
       {messages.map((message) =>
         message.name ? (
-          <div className="chatScreen_message">
+          <div className="chatScreen__message">
             <Avatar
-              className="chatScreen_image"
+              className="chatScreen__image"
               alt={message.name}
               src={message.image}
             />
-            <p className="chatScreen_text">{message.message}</p>
+            <p className="chatScreen__text">{message.message}</p>
           </div>
         ) : (
-          <div className="chatScreen_message">
-            <p className="chatScreen_textUser">{message.message}</p>
+          <div className="chatScreen__message">
+            <p className="chatScreen__textUser">{message.message}</p>
           </div>
         )
       )}
-      <form className="chatScreen_input">
+      <form className="chatScreen__form">
         <input
-          valeu={input}
+          value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="chatScreen_inputField"
+          className="chatScreen__inputField"
           type="text"
           placeholder="Type a message..."
         />
         <button
           onClick={handleSend}
           type="submit"
-          className="chatScreen_inputButton"
+          className="chatScreen__inputButton"
         >
           SEND
         </button>

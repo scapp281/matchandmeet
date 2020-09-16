@@ -1,0 +1,10 @@
+firebase login
+firebase init
+hosting spacebar enter
+use existing project
+use public directory? build
+configure as single page app? yes
+
+npm run build
+
+firebase deploy
