@@ -7,7 +7,14 @@ import SwipeButtons from "../SwipeButtons/SwipeButtons";
 import Chats from "../Chats/Chats";
 import ChatScreen from '../Chats/ChatScreen';
 import Profile from "../Profile/Profile";
+import { injectGlobal } from 'styled-components'
 
+injectGlobal`
+  body {
+    background-color: #333;
+    color: #fff;
+  }
+`
 function App() {
   return (
     <div className="App">
