@@ -14,7 +14,13 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-tinder-card": "^1.2.1",
-    "whatwg-fetch": "^3.4.1"
+    "whatwg-fetch": "^3.4.1",
+    "animejs": "^2.2.0",
+    "prop-types": "^15.6.0",
+    "react-chartjs": "^0.8.0",
+    "react-modal": "^3.0.3",
+    "recharts": "^1.0.0-alpha.6",
+    "styled-components": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
